@@ -29,7 +29,7 @@ Le résultat de la résolution sera écrit dans un fichier nommé `nom_grille_so
 Supposons que vous ayez une grille Takuzu nommée `grille.txt` que vous souhaitez résoudre. Voici comment vous pouvez utiliser ce script pour afficher les étapes de la résolution :
 
 ```
-python3 takuzu2.py grille.txt -a
+python3 takuzu.py grille.txt -a
 ```
 
 Une fois que le script a terminé son exécution, vous trouverez la solution dans un fichier appelé `grille_sol.txt`.
