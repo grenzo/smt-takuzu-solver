@@ -15,7 +15,7 @@ sudo apt-get install python3-tk
 Pour résoudre une grille Takuzu, exécutez la commande suivante dans votre terminal :
 
 ```
-python3 takuzu2.py nom_grille.txt [-a]
+python3 takuzu.py nom_grille.txt [-a]
 ```
 
 Remplacez `nom_grille.txt` par le chemin vers votre fichier de grille Takuzu à résoudre.
