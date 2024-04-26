@@ -126,8 +126,8 @@ class GrilleTakuzu:
 
 def main():
     # Vérifier si un nom de fichier a été passé en argument
-    if len(sys.argv) != 2:
-        print("Usage: python script.py <nom_fichier>")
+    if  len(sys.argv) > 3 or len(sys.argv) < 2 :
+        print("Usage: python script.py <nom_fichier> [option]")
         return
     
     # Récupérer le nom du fichier d'entrée à partir des arguments de la ligne de commande
@@ -148,7 +148,8 @@ def main():
             for row in solution:
                 output_file.write("".join(map(str, row)) + "\n")
         print(f"Solution écrite dans '{output_file_path}'.")
-        #GrilleTakuzu.afficher_solution_par_etapes(grille, solution)
+        if len(sys.argv) >= 3 and sys.argv[2] == "-a" :
+            GrilleTakuzu.afficher_solution_par_etapes(grille, solution)
     else:
         print("Pas de solution trouvée.")
 
